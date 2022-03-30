@@ -9,7 +9,7 @@ let guestName = prompt('Qual è il tuo nome?');
 
 for (i = 0; i < guestList.length; i++) {
     guestListIndex = guestList[i];
-    if (guestName == guestListIndex) {
+    if (guestName.includes(guestListIndex)) {
         console.log('Il tuo nome è nella lista, puoi entrare.');
         break;
     } else {
