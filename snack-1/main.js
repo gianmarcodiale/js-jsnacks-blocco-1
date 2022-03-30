@@ -11,11 +11,11 @@ const secondNumber = prompt("Inserisci il secondo numero:");
 // creo la condizione per verificare se uno è maggiore, minore o uguale all'altro
 if (firstNumber > secondNumber) {
 
-    console.log("Il primo numero inserito è maggiore del secondo!");
+    console.log(`Il primo numero inserito (${firstNumber}) è maggiore del secondo!`);
 
 } else if (secondNumber > firstNumber) {
 
-    console.log("Il secondo numero inserito è maggiore del primo!");
+    console.log(`Il secondo numero inserito (${secondNumber}) è maggiore del primo!`);
 
 } else {
 
