@@ -11,4 +11,4 @@ for (n = 0; n < numbersList.length; n++) {
 };
 
 console.log(sum);
-console.log(sum / 2);
+console.log(sum / 10);

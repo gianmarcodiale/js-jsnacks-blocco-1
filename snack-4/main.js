@@ -7,12 +7,17 @@ const guestList = ['Luca', 'Giovanni', 'Marco', 'Laura', 'Arianna', 'Giada'];
 
 let guestName = prompt('Qual è il tuo nome?');
 
+let success = false;
+
 for (i = 0; i < guestList.length; i++) {
     guestListIndex = guestList[i];
     if (guestName.includes(guestListIndex)) {
-        console.log('Il tuo nome è nella lista, puoi entrare.');
-        break;
-    } else {
-        console.log('Mi dispiace non sei sulla lista, non puoi entrare.');
+        success = true;
     }
+};
+
+if (success) {
+    console.log('Sei nella lista, puoi entrare.');
+} else {
+    console.log('Mi dispiace il tuo nome non è nella lista, non puoi entrare.');
 };
